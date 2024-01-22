@@ -100,4 +100,20 @@ function sendEmail() {
 }
 
 
+window.onload = function () {
+
+    const instagramIframe = document.getElementById('instagram-embed-0');
+    if (instagramIframe) {
+        instagramIframe.title = 'Título del Iframe para Instagram'; // Reemplaza con tu propio título
+    }
+
+    const owlDotButtons = document.querySelectorAll('.owl-dots button');
+
+    owlDotButtons.forEach(function(button, index) {
+        const buttonLabel = 'Slide ' + (index + 1); // Puedes personalizar el texto según tus necesidades
+        button.setAttribute('aria-label', buttonLabel);
+    });
+};
+
+
 

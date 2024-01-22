@@ -218,7 +218,7 @@ hr.divider {
 /* SLIDDER */
 
 .slide1 {
-    background: linear-gradient(rgba(9, 32, 50, 0.3), #09203256), url(../img/bg_banner1.jpg);
+    background: linear-gradient(rgba(9, 32, 50, 0.3), #09203256), url(../img/bg_banner1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -230,7 +230,7 @@ hr.divider {
 }
 
 .slide2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), #09203256), url(../img/bg_banner2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), #09203256), url(../img/bg_banner2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -463,7 +463,7 @@ hr.divider {
 
 #reviews {
 
-    background: linear-gradient(to top, rgba(9, 32, 50, 12), #07192756), url(../img/bg_banner1.jpg);
+    background: linear-gradient(to top, rgba(9, 32, 50, 12), #07192756), url(../img/bg_banner1.webp);
     background-position: center;
     background-size: cover;
     background-size: 100vh;
@@ -699,4 +699,52 @@ hr.divider {
     }
 }
 
+.accordion {
+    --bs-accordion-active-color: white;
+    --bs-accordion-active-bg: var(--brand);
+    --bs-accordion-bg: var(--brand);
+    --bs-accordion-color: white;
+    --bs-accordion-btn-icon: url(../img/descarga.svg);
+    --bs-accordion-btn-focus-border-color: ;
+    --bs-accordion-btn-focus-box-shadow: ;
+    
 
+}
+.accordion-button::after {
+    background-image: url(../img/descarga.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/descarga.svg);
+    transform: rotate(180deg);
+
+}
+
+
+
+.accordion-button {
+    color: white;
+    font-weight: bold;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+    background: var(--brand);
+    width: 15px;
+    height: 15px;
+    
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 15px;
+    height: 15px;
+   
+}
+
+.owl-dots button {
+    margin-right: 10px; /* Ajusta el valor según tus necesidades */
+  }
+
+  /* Para evitar que el último botón tenga margen derecho */
+  .owl-dot:last-child {
+    margin-right: 0;
+  }
